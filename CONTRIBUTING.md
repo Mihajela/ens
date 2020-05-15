@@ -6,4 +6,5 @@ Run the commands below to push all packages to NPM:
 $ npm i
 $ npm run build
 $ npm run test
+$ npm publish
 ```

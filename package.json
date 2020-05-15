@@ -1,6 +1,6 @@
 {
   "name": "@0xcert/ens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "0xcert ENS module for ens domain management on the Ethereum blockchain.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

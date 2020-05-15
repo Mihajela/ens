@@ -1,0 +1,68 @@
+{
+  "name": "ens",
+  "version": "0.0.1",
+  "description": "0xcert ENS module for ens domain management on the Ethereum blockchain.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npx tsc",
+    "clean": "rm -Rf ./dist",
+    "lint": "npx tslint 'src/**/*.ts?(x)'",
+    "test": "npm run lint && npx nyc npx hayspec test"
+  },
+  "hayspec": {
+    "require": [
+      "ts-node/register"
+    ],
+    "match": [
+      "./src/tests/**/*.test.ts"
+    ]
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "exclude": [
+      "src/tests"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xcert/ens.git"
+  },
+  "keywords": [
+    "0xcert",
+    "framework",
+    "blockchain",
+    "ens",
+    "ethereum",
+    "zxc",
+    "domain"
+  ],
+  "author": "0xcert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xcert/ens/issues"
+  },
+  "homepage": "https://github.com/0xcert/ens#readme",
+  "devDependencies": {
+    "@hayspec/cli": "0.10.0",
+    "@hayspec/spec": "0.10.0",
+    "@0xcert/ethereum-http-provider": "2.0.2",
+    "nyc": "15.0.1",
+    "ts-node": "8.10.1",
+    "tslint": "6.1.2",
+    "typescript": "3.8.3",
+    "@types/node": "^14.0.1"
+  },
+  "dependencies": {
+    "@0xcert/ethereum-generic-provider": "2.0.2",
+    "@0xcert/ethereum-utils": "2.0.2",
+    "@0xcert/scaffold": "2.0.2",
+    "@0xcert/utils": "2.0.2",
+    "eth-ens-namehash": "^2.0.8"
+  }
+}

@@ -1,6 +1,9 @@
 # ENS
 
-ENS module for ens domain management on the Ethereum blockchain.
+The ENS module enables a secure and decentralized ENS domain management on the Ethereum blockchain. 
+It maps human-readable names to machine-readable identifiers such as Ethereum addresses and vice versa. 
+
+Read about ENS integration in an application at the Etherum Name Service [guide] (https://docs.ens.domains).
 
 # Usage
 
